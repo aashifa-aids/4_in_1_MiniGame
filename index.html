@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>🎮 Cute 4-in-1 Game App</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎀 Cute 4-in-1 Game App</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<h1>🎀 Cute 4-in-1 Game App 🎀</h1>
+<body>
+<h1>🎮 Cute 4-in-1 Game App</h1>
 
 <div class="menu">
-    <button onclick="showGame('rps')">Rock Paper Scissors</button>
-    <button onclick="showGame('ttt')">Tic Tac Toe</button>
-    <button onclick="showGame('guess')">Guess Number</button>
-    <button onclick="showGame('click')">Click Game</button>
+    <button onclick="showGame('rps')">✊ RPS</button>
+    <button onclick="showGame('ttt')">❌ Tic Tac Toe</button>
+    <button onclick="showGame('guess')">🎯 Guess</button>
+    <button onclick="showGame('click')">⚡ Click</button>
 </div>
 
 <!-- Rock Paper Scissors -->
@@ -28,22 +30,17 @@
 <div id="ttt" class="game">
     <h2>❌⭕ Tic Tac Toe</h2>
     <div class="board">
-        <div onclick="playTTT(0)"></div>
-        <div onclick="playTTT(1)"></div>
-        <div onclick="playTTT(2)"></div>
-        <div onclick="playTTT(3)"></div>
-        <div onclick="playTTT(4)"></div>
-        <div onclick="playTTT(5)"></div>
-        <div onclick="playTTT(6)"></div>
-        <div onclick="playTTT(7)"></div>
-        <div onclick="playTTT(8)"></div>
+        <div onclick="playTTT(0)"></div><div onclick="playTTT(1)"></div><div onclick="playTTT(2)"></div>
+        <div onclick="playTTT(3)"></div><div onclick="playTTT(4)"></div><div onclick="playTTT(5)"></div>
+        <div onclick="playTTT(6)"></div><div onclick="playTTT(7)"></div><div onclick="playTTT(8)"></div>
     </div>
     <p id="tttResult"></p>
+    <button onclick="resetTTT()">Reset</button>
 </div>
 
 <!-- Guess Number -->
 <div id="guess" class="game">
-    <h2>🎯 Guess the Number</h2>
+    <h2>🎯 Guess the Number (1-10)</h2>
     <input type="number" id="guessInput">
     <button onclick="guessNumber()">Guess</button>
     <p id="guessResult"></p>
@@ -51,7 +48,7 @@
 
 <!-- Click Game -->
 <div id="click" class="game">
-    <h2>⚡ Click Speed Game</h2>
+    <h2>⚡ Click Speed</h2>
     <button onclick="countClick()">CLICK ME</button>
     <p id="clickCount">Clicks: 0</p>
 </div>
