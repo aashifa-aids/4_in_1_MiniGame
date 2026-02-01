@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffe6f0;
+    text-align: center;
+}
+
+h1 {
+    color: #ff4d88;
+}
+
+.menu button {
+    margin: 5px;
+    padding: 10px;
+    background: #ff99c8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.game {
+    display: none;
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.board div {
+    width: 80px;
+    height: 80px;
+    background: white;
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+}
