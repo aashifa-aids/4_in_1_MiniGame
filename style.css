@@ -1,7 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #ffe6f0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg,#ffd6e8,#e6f7ff);
     text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -9,31 +11,50 @@ h1 {
 }
 
 .menu button {
-    margin: 5px;
-    padding: 10px;
-    background: #ff99c8;
+    margin: 6px;
+    padding: 10px 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
+    background: #ff99c8;
+    color: white;
+    font-size: 14px;
     cursor: pointer;
+}
+
+.menu button:hover {
+    background: #ff66a3;
 }
 
 .game {
     display: none;
-    margin-top: 20px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 330px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .board {
     display: grid;
     grid-template-columns: repeat(3, 80px);
-    gap: 5px;
+    gap: 6px;
     justify-content: center;
+    margin: 10px auto;
 }
 
 .board div {
     width: 80px;
     height: 80px;
-    background: white;
-    font-size: 30px;
+    background: #ffe6f0;
+    font-size: 36px;
     line-height: 80px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+input {
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
 }
