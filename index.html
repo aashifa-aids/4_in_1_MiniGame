@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎮 Cute 4-in-1 Game App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎀 Cute 4-in-1 Game App 🎀</h1>
+
+<div class="menu">
+    <button onclick="showGame('rps')">Rock Paper Scissors</button>
+    <button onclick="showGame('ttt')">Tic Tac Toe</button>
+    <button onclick="showGame('guess')">Guess Number</button>
+    <button onclick="showGame('click')">Click Game</button>
+</div>
+
+<!-- Rock Paper Scissors -->
+<div id="rps" class="game">
+    <h2>✊✋✌ Rock Paper Scissors</h2>
+    <button onclick="playRPS('rock')">Rock</button>
+    <button onclick="playRPS('paper')">Paper</button>
+    <button onclick="playRPS('scissors')">Scissors</button>
+    <p id="rpsResult"></p>
+</div>
+
+<!-- Tic Tac Toe -->
+<div id="ttt" class="game">
+    <h2>❌⭕ Tic Tac Toe</h2>
+    <div class="board">
+        <div onclick="playTTT(0)"></div>
+        <div onclick="playTTT(1)"></div>
+        <div onclick="playTTT(2)"></div>
+        <div onclick="playTTT(3)"></div>
+        <div onclick="playTTT(4)"></div>
+        <div onclick="playTTT(5)"></div>
+        <div onclick="playTTT(6)"></div>
+        <div onclick="playTTT(7)"></div>
+        <div onclick="playTTT(8)"></div>
+    </div>
+    <p id="tttResult"></p>
+</div>
+
+<!-- Guess Number -->
+<div id="guess" class="game">
+    <h2>🎯 Guess the Number</h2>
+    <input type="number" id="guessInput">
+    <button onclick="guessNumber()">Guess</button>
+    <p id="guessResult"></p>
+</div>
+
+<!-- Click Game -->
+<div id="click" class="game">
+    <h2>⚡ Click Speed Game</h2>
+    <button onclick="countClick()">CLICK ME</button>
+    <p id="clickCount">Clicks: 0</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
